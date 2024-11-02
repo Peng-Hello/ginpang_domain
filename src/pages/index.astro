@@ -1,6 +1,6 @@
 ---
 import { Picture } from 'astro:assets';
-import img from '~/assets/undraw_dog_c7i6.svg';
+import img from '~/assets/principle_icon.svg';
 import { SiteDescription, SiteTitle } from '~/config';
 import MarkdownLayout from '~/layouts/MarkdownLayout.astro';
 ---
@@ -12,36 +12,31 @@ import MarkdownLayout from '~/layouts/MarkdownLayout.astro';
 	currentNav="Home"
 >
 	<div class="flex flex-col items-center gap-4 xl:flex-row">
-		<Picture class="lg:max-w-md" src={img} formats={['avif', 'webp']} alt="a dog" loading="eager" />
+		<Picture class="lg:max-w-md object-contain" style="width:448px;height:244px;" src={img} formats={['avif', 'webp']} alt="a dog" loading="eager" />
 		<div>
-			<h1>Hello there! I am Ladit👋</h1>
+			<h1>Hello, my friend! I am GinPang👋</h1>
 			<p>
-				This is a blog template built with <a href="https://astro.build">Astro</a>. The theme
-				originates from <a href="https://github.com/varkai/hugo-theme-zozo">hugo-theme-zozo</a>.
-				Check out <a href="/posts/getting-started">the docs</a> to get started. Here are some
-				features:
+				很高兴见到你！
+			</p>
+			<p>
+				这个是我的博客，我将在这里与你分享我的编码与生活时光。
+			</p>
+			<p>
+				让我们一起无限进步！
 			</p>
 			<ul class="list-disc">
 				<li>
-					Fast and light weight. Lighthouse 4 * 100/100 on desktop. 1 point decreased on mobile.
+					My Tag: 前端er / 创新派 / 反教条主义er
 				</li>
 				<li>
-					<a href="https://astro.build">Astro 4</a> with no other UI frameworks integrated for better
-					performance
+					Major in: Web deveplopment , 小程序开发 , Node.js 
 				</li>
 				<li>
-					mobile-friendly responsive design with <a href="https://tailwindcss.com/">Tailwind CSS</a>
+					Work at: <a href="https://www.gdyhsp.com/">壹号食品</a>
 				</li>
 				<li>
-					Light / dark theme derived from <a href="https://github.com/varkai/hugo-theme-zozo"
-						>hugo-theme-zozo</a
-					>
+					Contact me: <a href="mailto:1936478563@qq.com" type="mail">1936478563@qq.com</a>
 				</li>
-				<li>Markdown post support with emoji shortcode, katex</li>
-				<li>static search with <a href="https://pagefind.app">Pagefind</a></li>
-				<li>comment system powered by <a href="https://github.com/giscus/giscus">giscus</a></li>
-				<li>SEO-friendly setup with canonical URLs and OpenGraph data</li>
-				<li>RSS / Sitemap.xml / dynamic open graph image generation</li>
 			</ul>
 		</div>
 	</div>
