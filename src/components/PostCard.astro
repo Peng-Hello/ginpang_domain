@@ -3,7 +3,7 @@ import { Picture } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 
 type Props = CollectionEntry<'posts'>;
-const post = Astro.props;
+const post:any = Astro.props;
 let date = post.data.lastmod;
 if (post.data.hide?.includes('lastmod') && post.data.date) {
 	date = post.data.date;
